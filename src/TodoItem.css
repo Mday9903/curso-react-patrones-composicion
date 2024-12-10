@@ -1,0 +1,54 @@
+.TodoItem{
+    position: relative;
+    width: 70%;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    gap: 25px;
+    font-size: 20px;
+    border-radius: 12px;
+    padding: 5px 20px;
+    user-select: none;
+    cursor: pointer;
+    font-weight:500;
+
+    
+    transition: background-color 0.5s ease; /* Suavizar el cambio */
+    background-color: #30343F;
+    box-shadow: 0 0 5px white;
+}
+.TodoItem:hover {
+    background-color: #CB904D;
+}
+
+.TodoItem__text--completed{
+    text-decoration: line-through;
+}
+.TodoItem:hover .TodoItem--black{
+    color: black;
+    /* Este selector es para que cuando se haga hover sobre el TodoItem se cambie el color de fuente del TodoItem__text y solo se cambie el color de fuente de ese elemento y ningun otro. */
+}
+.TodoItem__Icon{
+    transition: transform 0.1s ease ;
+    transform: scale(1);
+}
+.TodoItem__Icon:hover{
+    transform: scale(1.5);
+}
+
+.TodoItem__Checked{
+    color: #07b40d;
+}
+.TodoItem_IconCheck{
+    width: 20px;
+    height: auto;
+}
+
+.TodoItem__delete{
+    position: absolute;
+    right: 3%;
+    top: -17px;
+}
+.TodoItem__delete:hover{
+    color: red;
+}

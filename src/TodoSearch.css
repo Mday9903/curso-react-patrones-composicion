@@ -1,0 +1,16 @@
+.SearchContainer{
+    display: flex;
+    justify-content: center;
+}
+.SearchContainer__input {
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+.SearchContainer__input:focus{
+    border: 4px solid #36a5d1;
+    outline: none;
+}
+

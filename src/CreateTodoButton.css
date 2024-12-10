@@ -1,0 +1,30 @@
+.ButtonContainer{
+    display: flex;
+    justify-content: center;
+}
+button{
+    position: fixed; /* Fijar la posición del botón */
+    bottom: 20px; /* Distancia desde la parte inferior */
+    right: 20px; /* Distancia desde la derecha */
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    font-size: 50px;
+    background-color: #36a5d1; /* Color base del botón */
+    color: white;
+    font-weight: bold;
+    cursor: pointer; 
+    border: white solid 1px;
+    box-shadow: 0 0 3px white;
+ 
+    transition: color 0.5s ease; /* Suavizar el cambio */   
+    transition: transform .3s ease;/* Suavizar el cambio */ 
+    transform: rotate(0);
+
+}
+
+button:hover{
+    background-color: rgb(100, 203, 244);
+    transform: rotate(360deg);
+    
+}
