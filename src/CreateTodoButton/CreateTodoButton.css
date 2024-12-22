@@ -2,7 +2,8 @@
     display: flex;
     justify-content: center;
 }
-button{
+
+.CreateTodoButton__mainButton{
     position: fixed; /* Fijar la posición del botón */
     bottom: 20px; /* Distancia desde la parte inferior */
     right: 20px; /* Distancia desde la derecha */
@@ -16,15 +17,29 @@ button{
     cursor: pointer; 
     border: white solid 1px;
     box-shadow: 0 0 3px white;
+    z-index: 1;
+    user-select: none;
  
-    transition: color 0.5s ease; /* Suavizar el cambio */   
-    transition: transform .3s ease;/* Suavizar el cambio */ 
+    transition: background-color 0.8s ease, transform .3s ease-in-out;/* Suavizar el cambio */ 
     transform: rotate(0);
 
 }
 
-button:hover{
+.CreateTodoButton__mainButton--formVisible{
+    background-color: #30343F;
+    color: red;
+    border: none;
+    /* border: red solid 1px; */
+    box-shadow: none;
+    rotate: 45deg;
+}
+.ButtonContainer > .CreateTodoButton__mainButton--formVisible:hover{
+    background-color: #404553;
+    transform: rotate(180deg);
+}
+
+.CreateTodoButton__mainButton:hover{
     background-color: rgb(100, 203, 244);
-    transform: rotate(360deg);
+    transform: rotate(270deg);
     
 }

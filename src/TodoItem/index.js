@@ -1,5 +1,5 @@
 import "./TodoItem.css";
-import TodoIcon from "./TodoIcon";
+import TodoIcon from "../TodoIcon/index";
 
 const TodoItem = (props) => {
   return (

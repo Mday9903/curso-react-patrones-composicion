@@ -1,0 +1,88 @@
+.TodoForm__Form{
+    display: none;
+    background-color: aqua;
+    position: absolute;
+    width: 45%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    font-size: 20px;
+    border-radius: 12px;
+    background-color: #30343F;
+    box-shadow: 0 0 3px white;
+    font-size: 24px;
+    font-weight: bold;
+    user-select: none;
+}
+.show-form {
+    display: flex;
+    animation: showForm 0.3s ease-in-out;
+}
+.TodoForm__textArea{
+    resize: none;
+    /* field-sizing se utiliza para que el textarea crezca a medida que el usuario ingresa texto dentro de él adaptandose */
+    field-sizing: content; 
+    min-height: 10rem;
+    max-height: 20rem;
+    border-radius: 12px;
+    padding: 15px;
+    border: none;
+    box-shadow: 0 0 5px white;
+    transition: all 0.3s ease-in-out;
+}
+.TodoForm__textArea:focus{
+    outline: none;
+    scale: 1.02;
+    transition: scale 0.1s ease-in-out;
+    border: 4px solid #36a5d1;
+}
+
+.TodoForm_buttonContainer{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.TodoForm__button{
+    padding: 10px;
+    width: 80px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    box-shadow: none;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.TodoForm__button:hover{
+    scale: 1.1;
+    transition: scale 0.1s ease;
+}
+
+.TodoForm__button--ad{
+    background-color: #36a5d1;
+}
+.TodoForm__button--ad:hover{
+    background-color: rgb(100, 203, 244);
+}
+
+.TodoForm__button--cancel{
+    background-color: rgba(128, 128, 128, 0.602);
+}
+.TodoForm__button--cancel:hover{
+    background-color: gray;
+}
+
+
+@keyframes showForm {
+    from {
+      opacity: 0;
+      scale: 0;
+    }
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
