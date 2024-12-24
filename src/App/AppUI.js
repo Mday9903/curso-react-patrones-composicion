@@ -20,7 +20,6 @@ const AppUI = () => {
     deleteTodo,
     totalTodos,
     openModal,
-    setOpenModal,
   } = useContext(TodoContext);
   return (
     <>

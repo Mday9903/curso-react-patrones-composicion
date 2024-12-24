@@ -33,7 +33,7 @@ function useLocalStorage(itemName, initialValue){
         }
         },2000)
           
-    },[]);
+    },[initialValue, itemName]);
     
     // Esta función va a modificar (recibiendo un array nuevo de "Items") el localStorage junto con el estado de "Items".
     const saveItem = (newItem) => {

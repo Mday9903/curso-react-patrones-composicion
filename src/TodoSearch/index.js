@@ -13,6 +13,7 @@ const TodoSearch = () => {
   return (
     <div className="SearchContainer">
       <input
+        name='TodoInput'
         className="SearchContainer__input"
         type="text"
         placeholder=""
